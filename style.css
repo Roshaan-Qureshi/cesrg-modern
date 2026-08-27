@@ -2072,9 +2072,14 @@ button {
    ========================================================= */
 
 .person-image {
-    position: relative;
+    width: 100%;
     height: 260px;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background: #eaf2f8;
 }
 
@@ -2082,11 +2087,12 @@ button {
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    display: block;
 
-    object-position: center top;
+    object-fit: contain;
+    object-position: center;
 
-    transition: transform 0.5s ease;
+    background: #eaf2f8;
 }
 
 .person-card:hover .person-image img {
