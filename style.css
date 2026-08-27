@@ -2098,3 +2098,18 @@ button {
 .person-card:hover .person-image img {
     transform: none;
 }
+/* Ensure the card container maintains a uniform grid structure */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Constrain card image height and aspect ratio */
+.person-card img {
+  width: 100%;
+  height: 280px; /* Adjust fixed height as needed */
+  object-fit: cover; /* Prevents stretching and crops cleanly */
+  object-position: top center; /* Keeps faces centered */
+  border-radius: 8px 8px 0 0;
+}
