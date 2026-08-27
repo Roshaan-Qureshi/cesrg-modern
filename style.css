@@ -2073,7 +2073,7 @@ button {
 
 .person-image {
     width: 100%;
-    height: 260px;
+    height: 320px;
     overflow: hidden;
 
     display: flex;
@@ -2090,11 +2090,11 @@ button {
     display: block;
 
     object-fit: contain;
-    object-position: center;
+    object-position: center center;
 
     background: #eaf2f8;
 }
 
 .person-card:hover .person-image img {
-    transform: scale(1.05);
+    transform: none;
 }
