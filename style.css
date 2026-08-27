@@ -2067,3 +2067,28 @@ button {
 .featured .collab-content strong {
     color: var(--white);
 }
+/* =========================================================
+   PROFESSOR PHOTOS
+   ========================================================= */
+
+.person-image {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    background: #eaf2f8;
+}
+
+.person-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    transition: transform 0.5s ease;
+}
+
+.person-card:hover .person-image img {
+    transform: scale(1.05);
+}
